@@ -34,7 +34,7 @@
 % - pdfdoc : 선택하지 않으면 북마크와 colorlink를 만들지 않습니다.
 
 
-\documentclass[master,english,final]{kaist-ucs}
+\documentclass[master,english,draft,pdfdoc]{kaist-ucs}
 
 
 % If you want make pdf document (include bookmark, colorlink)
@@ -48,8 +48,8 @@
 % @command title 논문 제목(title of thesis)
 % @options [default: (none)]
 % - korean: 한글제목(korean title) | english: 영문제목(english title)
-\title[korean] {양자 통신의 근원적 이론과 응용}
-\title[english]{Theoretical Study on Quantum Communication with\linebreak Some Applications}
+\title[korean] {액상 냉각 매니폴드 마이크로채널 히트싱크의 열성능 예측}
+\title[english]{Thermal performance prediction of liquid-cooled manifold microchannel (MMC) heat sinks}
 
 % @note 표지에 출력되는 제목을 강제로 줄바꿈하려면 \linebreak 을 삽입.
 %       \\ 나 \newline 등을 사용하면 안됩니다. (아래는 예시)
@@ -77,18 +77,18 @@
 % \author[chinese]{family name in your native language}{given name in your native language}
 % \author[english]{family name in english}{given name in english}
 %
-\author[korean] {박}{상 우}
-\author[korean2] {박}{상우}    %이름을 붙여 써 주시기 바랍니다.
-\author[chinese]{朴}{相 禹}
-\author[english]{Park}{Sangwoo}
+\author[korean] {이}{한 솔}
+\author[korean2] {이}{한솔}    %이름을 붙여 써 주시기 바랍니다.
+\author[chinese]{李}{한 솔}
+\author[english]{Lee}{Hansol}
 
 % @command advisor 지도교수 이름 (복수가능)
 % @usage   \advisor[options]{...한글이름...}{...영문이름...}{signed|nosign}
 % @options [default: major]
 % - major: 주 지도교수  | coopr: 공동 지도교수
-\advisor[major]{송 익 호}{Iickho Song}{signed}
-\advisor[major2]{송익호}{Iickho Song}{signed}    %한글 성과 한글 이름을 모두 붙여 써 주시기 바랍니다.
-\advisorinfo{Professor of Electrical Engineering} %제출승인서에 들어가는 교수님 정보, advisor's information 
+\advisor[major]{김 성 진}{Sung Jin Kim}{signed}
+\advisor[major2]{김성진}{Sung Jin Kim}{signed}    %한글 성과 한글 이름을 모두 붙여 써 주시기 바랍니다.
+\advisorinfo{Professor of Mechanical Engineering} %제출승인서에 들어가는 교수님 정보, advisor's information 
 %\advisor[coopr]{홍 길 동}{Gil-Dong Hong}{nosign}
 %\advisor[coopr2]{홍길동}{Gil-Dong Hong}{nosign}    %한글 성과 한글 이름을 모두 붙여 써 주시기 바랍니다.
 %
@@ -116,27 +116,26 @@
 % a: it represents only the name of department. (if you aren't in the program under the department, must choose a)
 % b: it represents the names of department and the program that is under the department (consider this when you are in the program not only department)
 % c: it represents only the name of program that is under the department (consider this when you are in the program not only department)
-\department{CS}{engineering}{a}
+\department{ME}{engineering}{a}
 
 % @command referee 심사위원 (석사과정 3인, 박사과정 5인)
-\referee[1]{송 익 호}
+\referee[1]{김 성 진}
 \referee[2]{안 진 현}
 \referee[3]{정 태 성}
-\referee[4]{가 동 호}
-\referee[5]{박 태 현}
+
 % \referee[5] {Barack Obama}
 % Of course english name is available
 
 % @command approvaldate 지도교수논문승인일
 % @param   year,month,day 연,월,일 순으로 입력
-\approvaldate{2020}{12}{5}
+\approvaldate{2023}{12}{10}
 
 % @command refereedate 심사위원논문심사일
 % @param   year,month,day 연,월,일 순으로 입력
-\refereedate{2020}{12}{5}
+\refereedate{2023}{12}{10}
 
 % @command gradyear 졸업년도
-\gradyear{2020}
+\gradyear{2024}
 
 % 본문 시작
 \begin{document}
@@ -151,21 +150,21 @@
    %% Number of keywords must be less than 6.
    %% Don't write english letters in the abstract in korean.
     \begin{summary}      
-    이 논문에서는 부 쓰는이가 여러 안테나를 쓰는 협력 인지 무선통신망을 다루었다. 안테나 개수는 이제까지의 방법과 같도록 유지하면서 부 쓰는이가 다다를 수 있는 전송률을 높이는 방안을 제시하였다. 좀 더 자세히 말하면, 동시 송수신 안테나를 써서 부 쓰는이끼리 전 이중으로 신호를 주고받을 수 있게 하여 부 쓰는이가 다다를 수 있는 전송률을 높이는 방안을 제시하고 그 성능을 살펴보았다. 제안한 협력 인지 무선통신망이 나타내는 다다를 수 있는 전송률이 이제까지의 다른 협력 인지 무선통신망에서 얻을 수 있는 것과 견주어 꽤 높음을 해석적인 방법과 계산적인 방법으로 보였다.
+
 
     \end{summary}
    
     \begin{Korkeyword}
-    인지 무선 통신, 협력 통신, 중계, 전 이중, 동시 송수신
+
     \end{Korkeyword}
 
 
     \begin{abstract}
-    We address cooperative cognitive radio networks (CCRNs) with secondary users (SUs) exploiting multiple antennas. In order to expand the achievable rate region by enabling full-duplex communication between SUs, we adopt simultaneous transmitting and receiving antennas for the SUs. The link capacities of the proposed framework are analyzed theoretically. It is shown through numerical analysis that the proposed framework can provide a considerable performance gain over the conventional CCRN framework.
+
     \end{abstract} 
      
     \begin{Engkeyword}
-    Cognitive radio, cooperation communication, relay, full-duplex, simultaneous transmission and reception
+
     \end{Engkeyword}
    
 
@@ -193,29 +192,25 @@
 
 \chapter{Introduction}
 \noindent
-Cognitive radio (CR), a key technology of resource-efficient wireless communications, can be employed to solve the problem of frequency resource shortage. However, due to the uncertainty of the secondary users' (SUs') usage of frequency band, the original CR has failed to gain sufficient interests. Recently, a new paradigm termed cooperative cognitive radio networks (CCRNs) has been proposed \cite{FD1}-\cite{ML1}...
-
 There ...
 
 \chapter[Related Works and Contributions of this Dissertation]{Related Works and \\ Contributions of this Dissertation}
 
 \section{Quantum Communication}
 
-There have been extensive studies on cognitive radio in recent years. To enhance the performance gain of original cognitive radio networks (CRNs), leveraging cooperative diversity has attracted a lot of attention \cite{SOCA1}...
 
 \subsection{Examples}
 
 
 \section{Applications of Quantum Communication}
 
-Despite its potential to improve the throughput, spatial domain diversity was not fully considered in the studies of original CCRNs. Utilizing the spatial domain for the communications, the concept of MIMO has been adopted in many cases to increase the wireless capacity \cite{EF1,FD2}...
 
 
 \chapter{Proposed Architecture and Its Application}
 
 \section{Proposed Architecture}
 
-Let us consider an MIMO-CCRN with one PL and one SL. Each PU has one legacy antenna and each SU has two STAR antennas. The duration of one communication time frame is divided into two phases \cite{RVP2,ML2} ...
+
 %%
 %% 표 삽입 예시
 %% Example. how to insert table
@@ -259,7 +254,7 @@ $n_{\rm up(down)}$ is the number of up (down) spins.
 
 \chapter{Concluding Remark}
 
-We have proposed a novel FD MIMO-CCRN framework providing a reasonable performance improvement compared with the conventional MIMO-CCRN framework... \cite{Copeland1995}
+
 %%
 %% 참고문헌 시작
 %% bibliography
@@ -303,10 +298,10 @@ We have proposed a novel FD MIMO-CCRN framework providing a reasonable performan
     % - 위 6개의 기본 필드 중에 이력서에 적고 싶은 정보를 입력
     % input data only you want
     \begin{personaldata}
-        \name       {박 상 우}
-        \dateofbirth{19xx}{xx}{xx}
-        \birthplace {...}
-        \address    {...}
+        \name       {이 한 솔}
+        \dateofbirth{1997}{06}{20}
+        \birthplace {대한민국}
+        \address    {대전광역시}
     \end{personaldata}
 
     % @environment education 학력
